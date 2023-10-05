@@ -16,7 +16,12 @@ export class AppComponent implements AfterViewInit {
 
   title = 'AngularFullCourse';
   parentMessage = 'Message coming from parent Component.'
+  fromChildOutput: string | undefined;
 
+  receiveMessage(event: any) {
+    this.fromChildOutput = event;
+
+  }
   ngAfterViewInit(): void {
     console.log(this.childComp.childMessage);
 
