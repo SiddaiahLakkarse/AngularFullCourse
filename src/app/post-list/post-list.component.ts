@@ -9,6 +9,8 @@ export class PostListComponent implements OnInit {
 
   @Input() fromPostParent: String | undefined;
 
+
+
   constructor() { };
 
   ngOnInit(): void {
