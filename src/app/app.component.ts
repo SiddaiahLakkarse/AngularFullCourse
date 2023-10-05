@@ -8,22 +8,15 @@ import { PostComponent } from './post/post.component';
 })
 export class AppComponent implements AfterViewInit {
 
-  constructor() {
-    console.log(this.childComp);
-  }
-
-  @ViewChild(PostComponent) childComp: any;
-
   title = 'AngularFullCourse';
-  parentMessage = 'Message coming from parent Component.'
-  fromChildOutput: string | undefined;
+  message: string = 'Message from Typescript component file.';
+  imgURL: string = 'assets/Images/sample.jpg';
 
-  receiveMessage(event: any) {
-    this.fromChildOutput = event;
-
+  constructor() {
   }
+
+
   ngAfterViewInit(): void {
-    console.log(this.childComp.childMessage);
 
   }
 }
