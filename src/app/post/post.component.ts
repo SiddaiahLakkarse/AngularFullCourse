@@ -7,12 +7,14 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PostComponent implements OnInit {
 
+  postParentMessage: string = 'Message coming from Post Component.';
+
   @Input() fromParent: string | undefined;
+
 
   constructor() { };
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
   }
 
 }
