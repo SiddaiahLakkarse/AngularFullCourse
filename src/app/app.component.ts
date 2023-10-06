@@ -13,7 +13,10 @@ export class AppComponent implements AfterViewInit {
 
   constructor() {
   }
+  buttonClick() {
+    console.log("Button Click Event Worked.");
 
+  }
 
   ngAfterViewInit(): void {
 
