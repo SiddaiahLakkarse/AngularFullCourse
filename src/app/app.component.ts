@@ -9,8 +9,7 @@ import { PostComponent } from './post/post.component';
 export class AppComponent implements AfterViewInit {
 
   title = 'AngularFullCourse';
-  message: string = 'Message from Typescript component file.';
-  imgURL: string = 'assets/Images/sample.jpg';
+  bool: Boolean = true;
 
   constructor() {
   }
