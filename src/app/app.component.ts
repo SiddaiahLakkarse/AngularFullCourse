@@ -9,13 +9,13 @@ import { PostComponent } from './post/post.component';
 export class AppComponent implements AfterViewInit {
 
   title = 'AngularFullCourse';
-  bool: Boolean = true;
+  username: string | undefined;
 
   constructor() {
   }
-  keyupEvent(username: any) {
+  keyupEvent() {
 
-    console.log(username);
+    console.log(this.username);
 
   }
 
