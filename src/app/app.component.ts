@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { PostComponent } from './post/post.component';
 
 @Component({
@@ -6,17 +6,17 @@ import { PostComponent } from './post/post.component';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements AfterViewInit {
+export class AppComponent implements OnInit, AfterViewInit {
 
-  title = 'AngularFullCourse';
-  username: string | undefined;
+  postTitle: string | undefined;
+  postDetails: string | undefined;
+  imageURL: string | undefined;
+  postURL: string | undefined;
+  addBackGround: boolean | undefined;
 
   constructor() {
   }
-  keyupEvent() {
-
-    console.log(this.username);
-
+  ngOnInit(): void {
   }
 
   ngAfterViewInit(): void {
