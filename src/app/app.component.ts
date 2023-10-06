@@ -13,8 +13,9 @@ export class AppComponent implements AfterViewInit {
 
   constructor() {
   }
-  buttonClick() {
-    console.log("Button Click Event Worked.");
+  keyupEvent() {
+
+    console.log("Event Filtering Worked.");
 
   }
 
