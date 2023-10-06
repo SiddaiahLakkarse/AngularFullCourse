@@ -13,9 +13,9 @@ export class AppComponent implements AfterViewInit {
 
   constructor() {
   }
-  keyupEvent() {
+  keyupEvent(username: any) {
 
-    console.log("Event Filtering Worked.");
+    console.log(username);
 
   }
 
